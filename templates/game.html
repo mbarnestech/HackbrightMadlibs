@@ -5,30 +5,32 @@
 {% block content %}
 
   <!-- make the game, should include: person, a color, a noun, and an adjective. Implement as wanted  -->
-  
+  {{ prompt_dict }}
   <!-- make form element that directs to  /madlib path -->
   <form action="/madlib">
     Please fill in the following fields for madlibs:
     <!-- make input element of type text to obtain noun -->
-    <label>
+    
+    <!--input from first part of lab, replaced by input_text_fields -->
+    <!-- <label>
         Noun:
         <input type="text" name="noun" placeholder="your noun here">
-    </label>
+    </label> -->
     <!-- make input element of type text to obtain adjective -->
-    <label>
+    <!-- <label>
         Adjective:
         <input type="text" name="adjective" placeholder="your adjective here">
-    </label>
+    </label> -->
     <!-- make input element of type text to obtain person -->
-    <label>
+    <!-- <label>
         Person:
         <input type="text" name="person" placeholder="your person here">
-    </label>
+    </label> -->
     <!-- make input element of type text to obtain color -->
-    <label>
+    <!-- <label>
         Color:
         <input type="text" name="color" placeholder="your color here">
-    </label>
+    </label> -->
     <input type="submit">
     </form>
 
